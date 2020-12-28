@@ -12,3 +12,8 @@ This repo contains code that will detect fire in the room using live feed from a
 2. opencv_annotation.exe was used to mark out the regions containing fire in positive training images.
 3. positives.vec file was generated using opencv_createsamples using appropriate width and height parameters.
 4. Classifier was trained using opencv_traincascade and cascade.xml file was produced as an output.
+
+## Response to Fire Detection
+1. Arduino is connected to a USB port of computer.
+2. Python script communicates its output to Arduino through the USB port.
+3. Arduino starts pumping water to extinguish fire, buzzer and LEDs are turned on and the owner of the place is alerted via SMS.
